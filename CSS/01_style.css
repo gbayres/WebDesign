@@ -1,0 +1,39 @@
+body{
+    background-image: url(Images/sands.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right up;
+    font-family: times new roman;
+    color: white;
+    margin: 0;
+}
+
+#cab{
+    background-image: url(../Images/prince.jpg);
+    height: 400px;
+    background-position: center center;
+    background-size: 1000px;
+    text-align: center;
+    color: #279df4;
+    box-shadow: 4px 4px 6px black;
+}
+
+
+#cab h1{
+    padding-top: 300px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-size: 50px;
+    text-decoration-color: white;
+    font-variant: small-caps;
+    text-shadow: 3px 3px 5px black;
+}
+
+main{
+    
+    background-color: #141a26;
+    box-shadow: 3px 3px 5px black;
+    padding: 5px;
+    text-align: center;
+    
+}
