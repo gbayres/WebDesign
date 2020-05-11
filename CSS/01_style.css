@@ -35,5 +35,52 @@ main{
     box-shadow: 3px 3px 5px black;
     padding: 5px;
     text-align: center;
+    border: 3px solid white;
     
 }
+
+#rodape{
+    background-color: rgba(0,0,0,0.5);
+    background-position: center center;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 12px;
+}
+
+#mainav li{
+    display: inline-block;
+    padding-top: 8px;
+    margin: 0px 10px;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+}
+
+#mainav a:link{
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border: 2px solid black;
+    text-decoration-line: none;
+
+}
+
+#mainav a:hover{
+    color: white;
+    background-color: crimson;
+}
+
+#mainav {
+    background: rgba(17, 48, 116, 0.54);
+    height: 70px;
+    padding-top: 0.1px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+/*display: block; transforma elemento em comportamento de bloco
+inline-block é interessante
+none remove o conteúdo
+invisibillity é a capa do HP
+box-sizing: border-box; adiciona o padding sem alterar o tamanho total
+asterisco pega todos elementos*/
