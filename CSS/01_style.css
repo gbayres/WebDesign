@@ -16,11 +16,12 @@ body{
     text-align: center;
     color: #279df4;
     box-shadow: 4px 4px 6px black;
+    border-top: 2px solid transparent; 
 }
 
 
 #cab h1{
-    padding-top: 300px;
+    padding-top: 280px;
     text-decoration: underline;
     text-decoration-style: dotted;
     font-size: 50px;
@@ -30,12 +31,14 @@ body{
 }
 
 main{
-    
-    background-color: #141a26;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.47);
     box-shadow: 3px 3px 5px black;
-    padding: 5px;
+    padding: 20px;
     text-align: center;
     border: 3px solid white;
+    width: 70%;
+    height: 2000px;
     
 }
 
