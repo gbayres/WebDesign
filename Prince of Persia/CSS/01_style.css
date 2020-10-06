@@ -6,6 +6,7 @@ body{
     font-family: times new roman;
     color: white;
     margin: 0;
+    text-align: center;
 }
 
 #cab{
@@ -29,7 +30,7 @@ body{
     font-variant: small-caps;
     text-shadow: 3px 3px 5px black;
 }
-
+ 
 main{
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.47);
@@ -65,12 +66,12 @@ main{
     color: black;
     border: 2px solid black;
     text-decoration-line: none;
-
 }
 
 #mainav a:hover{
     color: white;
     background-color: crimson;
+    /* transition: color 0.3s linear */
 }
 
 #mainav {
@@ -81,6 +82,26 @@ main{
     border: 2px solid black;
 }
 
+#main_art div{
+    height: 0;
+    overflow: auto;
+    transition: height .5s;
+    /* display: none; */
+}
+
+#main_art:hover div{
+    /* display: block; */
+    height: 100px;
+}
+
+#main_art h2{
+    transition: color .5s;
+}
+
+#main_art:hover h2{
+    color: rgb(16, 89, 172);
+
+}
 /*display: block; transforma elemento em comportamento de bloco
 inline-block é interessante
 none remove o conteúdo
