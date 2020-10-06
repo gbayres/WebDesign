@@ -33,11 +33,11 @@ body{
  
 main{
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.47);
+    background-color: rgba(119, 113, 113, 0.47);
     box-shadow: 3px 3px 5px black;
     padding: 20px;
     text-align: center;
-    border: 3px solid white;
+    border: 3px solid rgb(78, 75, 75);
     width: 70%;
     height: 2000px;
     
@@ -61,7 +61,7 @@ main{
 }
 
 #mainav a:link{
-    background-color: white;
+    background-color: rgb(150, 144, 144);
     padding: 10px;
     color: black;
     border: 2px solid black;
@@ -82,17 +82,18 @@ main{
     border: 2px solid black;
 }
 
-#main_art div{
-    height: 0;
-    overflow: auto;
-    transition: height .5s;
-    /* display: none; */
-}
 
-#main_art:hover div{
-    /* display: block; */
+#main_art div{
     height: 100px;
 }
+
+/*
+#main_art:hover div{
+    display: block;
+    height: 100px;
+}
+
+*/
 
 #main_art h2{
     transition: color .5s;
@@ -102,6 +103,44 @@ main{
     color: rgb(16, 89, 172);
 
 }
+
+.chars{
+    text-align: center;
+    background-color: rgba(105, 105, 117, 0.562);
+    box-shadow: 3px 4px 2px black;
+    /* transition: background-color .5s; */
+    height: 20px;
+    overflow: auto;
+    transition: height .5s, 
+                box-shadow 1s,
+                background-color .5s;
+}
+
+.chars:hover {
+    background-color: rgba(214, 62, 93, 0.63);
+    height: 200px;
+    box-shadow: 5px 6px 4px crimson;
+}
+
+.chars tbody td{
+    border: solid 2px black;
+    text-align: center;
+    padding: 10px;
+}
+
+.chars table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto; /*<<<<<<<<<, centraliza */
+}
+
+.chars thead td{
+    border: solid 2px black;
+    background-color: rgb(163, 10, 40);
+    padding: 10px;
+
+}
+
 /*display: block; transforma elemento em comportamento de bloco
 inline-block é interessante
 none remove o conteúdo
