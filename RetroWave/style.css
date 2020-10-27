@@ -1,0 +1,33 @@
+body{
+    background-image: url("Images/background.jpg");
+    background-color: rgb(155, 14, 155);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: verdana;
+    text-align: center;
+    margin: 0;
+
+}
+
+#main_header {
+    background-image: url("Images/header-background.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    color: white;
+    height: 400px;
+    box-shadow: 4px 4px 2px rgb(71, 146, 243);
+
+}
+
+#main_header h1{
+    position: relative;
+    margin-top: 0px;
+    padding-top: 0%;
+}
+
+main{
+    height: 2000px;
+}
