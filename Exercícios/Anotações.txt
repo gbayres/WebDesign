@@ -1,0 +1,12 @@
+box-sizing: border-box; => ao invés do padding adicionar ao tamanho final, ele reduz espaço pro conteúdo na div.
+visibility: hidden; => esconde o elemento, mas guarda o espaço.
+float: right; => deixa a div flutuando à direita, mas causa muito efeito colateral
+clear: right; => remove efeito colateral do float: right;
+clear: both; => clear left and right;
+Elementos com float se entendem, mas a div mãe para de reconhecer como filhos => para corrigir, usar overflow: auto (gambiarra)
+	clearfix é mais elegante (???)
+position: relative; => elemento é relativo a ele mesmo
+	Não altera os elementos, ainda segura a posição, mas faz uma projeçao pra outro lugar
+	usado em conjunto com top, right, left, bottom...
+position: absolute; => elemento é relativo ao último elemento pai posicionado (body, absolute, relative, fixed)
+position: fixed; => relativo à tela. Fica fixo na janela do browser.
