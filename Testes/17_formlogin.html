@@ -9,15 +9,22 @@
         <meta name="keywords" content="html5, tecnologia">
         
         <style>
+
             .formLogin{
                 width: 250px;
                 margin: 50px auto 0;
                 font-family: sans-serif;
+                border-radius: 10px;
+                border-style:double;
+                border-width: 5px;
+                
+    
             }
             .formLogin fieldset{
                 background: #ccc;
             }
             .formLogin legend{
+                border-radius: 10px;
                 text-align: center;
                 width: 100px;
                 background: white;
@@ -31,6 +38,7 @@
                 background: red;
                 color: white;
             }
+
             .formLogin label{
                 margin-top: 15px;
                 display: block;
@@ -69,14 +77,20 @@
                 <legend>Login</legend>
                 
                 <label for="user">Digite o seu usuario</label>
-                <input type="text" id="user" name="user" autofocus>
+                <input type="text" id="user" name="user" placeholder="Seu nome" autofocus>
                 
                 <label for="pass">Digite a senha</label>
                 <input type="password" id="pass" name="pass">
                 
-                <input type="submit" value="logar" class="btn">
-                
             </fieldset>
+
+            <fieldset>
+                <legend>Selecione seu jogo favorito</legend>
+                <input type="file" style: "width: 100%">
+            </fieldset>
+
+            <input type="submit" value="logar" class="btn">
+                
         </form>
     </body>
 </html>
