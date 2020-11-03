@@ -10,3 +10,4 @@ position: relative; => elemento é relativo a ele mesmo
 	usado em conjunto com top, right, left, bottom...
 position: absolute; => elemento é relativo ao último elemento pai posicionado (body, absolute, relative, fixed)
 position: fixed; => relativo à tela. Fica fixo na janela do browser.
+<dl>, <dt> e <dd> => lista, termo, definição.
