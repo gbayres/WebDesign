@@ -139,7 +139,7 @@ main{
     margin: auto; /*<<<<<<<<<, centraliza */
 }
 
-.chars thead td{
+.chars thead th{
     border: solid 2px black;
     background-color: rgb(163, 10, 40);
     padding: 10px;
@@ -180,6 +180,18 @@ input:hover{
 
 #form_login fieldset legend{
     margin-bottom: 10px;
+}
+
+#fotinha {
+    width: 200px;
+    border-radius: 100px 0;
+    position: relative;
+    bottom: 0px;
+    transition: bottom 3s ease;
+}
+
+#fotinha:hover {
+    bottom: 500px;
 }
 
 /*display: block; transforma elemento em comportamento de bloco

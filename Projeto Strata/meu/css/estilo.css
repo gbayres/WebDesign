@@ -1,0 +1,103 @@
+* {
+    border: 1px solid black;
+}
+
+body {
+    overflow: auto; 
+    font-family: 'Open Sans', arial, helvetica, sans-serif;
+}
+
+header {
+    float: left;
+    width: 35%;
+    height: 100%;
+    position: fixed;
+    background-position: center;
+    background-size: auto, cover;
+    background-image: url(../images/overlay.png), url(../images/bg.jpeg);
+    
+    text-align: right;
+}
+
+nav{
+    float: left;
+    height: 2em;
+    width: 65%;
+    margin-left: 35%;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    height: 25%;
+}
+
+main{
+    width: 65%;
+    margin-left: 35%;
+    height: 80%;
+    float: left;
+}
+
+#avatar {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+#avatar img{
+    width: 7em;
+    margin-top: 25%;
+    border-radius: 50%;
+    transition: width .5s ease, border .5s ease;
+    border: white 4px solid;
+    
+}
+
+header:hover #avatar img{
+    width: 9em;
+    border: rgb(58, 186, 245) 8px solid;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    width: 80%;
+    margin-left: 10%;
+    height: 20%;
+    overflow: hidden;
+    text-align: center;
+    font-style: oblique;
+    line-height: 2em;
+    
+    
+}
+
+#main_name{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-variant: small-caps;
+    transition: color 1s ease;
+    
+}
+
+header:hover #main_name{
+    color: rgb(58, 186, 245);
+}
+
+#profession {
+    display: inline-block;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    transition: height 1s ease;
+    line-height: 18px;
+}
+
+header:hover #profession {
+    transition-delay: .3s;
+    height: 40px;
+}

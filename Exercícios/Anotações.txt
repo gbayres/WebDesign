@@ -11,3 +11,19 @@ position: relative; => elemento é relativo a ele mesmo
 position: absolute; => elemento é relativo ao último elemento pai posicionado (body, absolute, relative, fixed)
 position: fixed; => relativo à tela. Fica fixo na janela do browser.
 <dl>, <dt> e <dd> => lista, termo, definição.
+<sub> e <sup> fazer subescrito ou sobrescrito.
+<code> representa uma linha de código
+<q cite="http://..."> usado para citações pequenas
+<blockquote cite=...> usado para citações maiores
+<pre> considera os espaços, quebras de linha e etc
+A unidade "em" se refere ao tamanho do objeto. Se eu coloco 2em eu tô dizendo que o tamanho é duas vezes o tamanho do objeto.
+a:last-child => aplica ao último herdeiro
+border-collapse: collapse => junta as bordas
+a:nth-child(n) => seleciona o filho; n pode ser even, odd, etc
+a:nth-child(3n - 1) => seleciona cada múltiplo de 3 - 1
+outline: none; => tira borda azul padrão do browser
+input[type="text"]{} => altera todo input do tipo texto
+max-width: 100%; => ajusta até o tamanho máximo da imagem
+.anterior + .posterior {} => seleciona todo elemento posterior que em após o anterior
+transition all; => faz a transição de tudo
+cursor: pointer; => coloca a mãozinha
