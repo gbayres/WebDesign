@@ -1,42 +1,44 @@
-* {
+/* * {
     border: 1px solid black;
-}
+} */
 
 body {
     overflow: auto; 
     font-family: 'Open Sans', arial, helvetica, sans-serif;
+    background-color: rgb(6, 4, 32);
+    color: white;
 }
 
 header {
     float: left;
-    width: 35%;
+    width: 25%;
     height: 100%;
     position: fixed;
     background-position: center;
     background-size: auto, cover;
-    background-image: url(../images/overlay.png), url(../images/bg.jpeg);
-    
+    background-image: url(../images/overlay.png), url(../images/bg.jpg);
     text-align: right;
+    /* border-right: solid 10px rgba(58, 186, 245, 0.5); */
 }
 
 nav{
     float: left;
     height: 2em;
-    width: 65%;
-    margin-left: 35%;
+    width: 75%;
+    margin-left: 27%;
 
 }
 
 footer {
     position: fixed;
     bottom: 0;
-    width: 35%;
+    width: 25%;
     height: 25%;
 }
 
 main{
-    width: 65%;
-    margin-left: 35%;
+    width: 75%;
+    margin-left: 27%;
     height: 80%;
     float: left;
 }
@@ -70,9 +72,7 @@ h1{
     overflow: hidden;
     text-align: center;
     font-style: oblique;
-    line-height: 2em;
-    
-    
+    line-height: 2em;   
 }
 
 #main_name{
