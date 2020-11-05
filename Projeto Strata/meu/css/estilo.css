@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 1px solid black;
-} */
+}
 
 body {
     overflow: auto; 
@@ -14,11 +14,17 @@ header {
     width: 25%;
     height: 100%;
     position: fixed;
-    background-position: center;
-    background-size: auto, cover;
-    background-image: url(../images/overlay.png), url(../images/bg.jpg);
+    background-position: right;
+    background-size: cover;
+    background-image: url(../images/bg5.jpg);
     text-align: right;
-    /* border-right: solid 10px rgba(58, 186, 245, 0.5); */
+    overflow: hidden;
+    border-right: solid 10px rgb(51, 94, 148);
+    transition: border-right-color .5s ease;
+}
+
+header:hover {
+    border-right-color: rgb(58, 186, 245);
 }
 
 nav{
@@ -34,6 +40,7 @@ footer {
     bottom: 0;
     width: 25%;
     height: 25%;
+    text-align: left;
 }
 
 main{
@@ -50,22 +57,22 @@ main{
 }
 
 #avatar img{
-    width: 7em;
+    width: 13em;
     margin-top: 25%;
     border-radius: 50%;
     transition: width .5s ease, border .5s ease;
-    border: white 4px solid;
+    border:  rgb(51, 94, 148) 10px solid;
     
 }
 
 header:hover #avatar img{
-    width: 9em;
-    border: rgb(58, 186, 245) 8px solid;
+    width: 16em;
+    border: rgb(58, 186, 245) 10px solid;
 }
 
 h1{
     color: rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 20px;
     width: 80%;
     margin-left: 10%;
     height: 20%;
@@ -78,7 +85,7 @@ h1{
 #main_name{
     display: inline-block;
     color: rgb(255, 255, 255);
-    font-size: 24px;
+    font-size: 35px;
     font-variant: small-caps;
     transition: color 1s ease;
     
@@ -99,5 +106,46 @@ header:hover #main_name{
 
 header:hover #profession {
     transition-delay: .3s;
-    height: 40px;
+    height: 60px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    
+}
+
+footer li i{
+    color: white;
+    transition: color .5s ease;
+}
+
+footer li:hover i{
+    color:rgb(58, 186, 245);
+}
+
+.name_in{
+    overflow: hidden;
+    display: inline-block;
+    font-size: 20px;
+    /* padding-left: 5px; */
+    height: 25px;
+    /* padding-bottom: 10px; */
+    width: 0;
+    transition: width .5s ease;
+}
+
+footer ul li:hover .name_in {
+    width: 60%;
+}
+
+footer ul li{
+    text-align: center;
+    box-sizing: border-box;
 }
