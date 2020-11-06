@@ -19,7 +19,7 @@ position: fixed; => relativo à tela. Fica fixo na janela do browser.
 A unidade "em" se refere ao tamanho do objeto. Se eu coloco 2em eu tô dizendo que o tamanho é duas vezes o tamanho do objeto.
 a:last-child => aplica ao último herdeiro
 border-collapse: collapse => junta as bordas
-a:nth-child(n) => seleciona o filho; n pode ser even, odd, etc
+a:nth-child(n) => seleciona o n-ésimo filho se ele for da classe a; n pode ser even, odd, etc
 a:nth-child(3n - 1) => seleciona cada múltiplo de 3 - 1
 outline: none; => tira borda azul padrão do browser
 input[type="text"]{} => altera todo input do tipo texto
@@ -42,3 +42,30 @@ img:not([alt]) {} => seleciona todas as imagens que não possuem atributo alt
 opacity: .2; => define opacidade
 texto:before {content=""} => adiciona elemento visual antes do conteúdo
 texto:after {content=""} => adiciona elemento visual após o conteúdo
+input[type="checkbox"]:checked {} => faz alguma coisa se a checkbox estiver checada
+<button disabled>Qqr coisa</button>
+	button:disabled{} => faz alguma coisa com o botão desabilitado 
+p:empty:before {content=""} => adiciona alguma coisa antes dos parágrafos vazios
+<div tabindex="1"></div> => força a div a receber focus
+<input type="text" value="valor inicial" readonly> => somente leitura
+input::placeholder {} => formata o placeholder
+div p:nth-of-type(4) => pega o quarto elemento do tipo parágrafo
+p::first-letter{
+	float: left;
+	font-size: 3em;
+	line-height: 1;
+	display: inline-block;
+	margin-right: .1em
+	} => formata a primeira letra
+p::first-line{} => formata a primeira linha
+p::selection{} => formata a seleção
+transform: translate(50px, 50px) => a diferença do transform pro position relative é
+	quuando trabalhamos com porcentagens => no position relative temos como referencia
+	a largura do elemento pai e no transform a ref é o próprio elemento.
+translateX e translateY são outras formas de representar
+transform: rotate(45deg); => rotaciona 45 graus
+transform-origin: left top; => muda o eixo de rotação
+transform: rotate(30deg) translate(50px, 50px) => se eu quiser aplicar as duas
+transform: skewY(30deg) skewX(30deg) => deforma o elemento;
+transform: scaleX(2) scaleY(3) => muda a escala do elemento;
+border-top-color: transparent; => deixa a borda de cima transparente

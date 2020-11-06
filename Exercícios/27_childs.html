@@ -1,0 +1,87 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            * {
+                border: solid 1px black;
+                
+            }
+
+            div p:nth-of-type(3){
+                color: red;
+            }
+            
+            .destaque{
+                background: #ddd;
+            }
+            
+            #div2 .destaque:nth-of-type(5){
+                color: orange;
+            }
+
+            .destaque:nth-child(1){
+                background-color: rgb(0, 81, 255);
+            }
+            
+            .destaque:first-child{
+                color: blue;
+            }
+            
+            p:last-child{
+                text-align: center;
+            }
+
+            #div1{
+                float: left;
+                width: 50%;
+            }
+
+            #div2{
+                float: left;
+                width: 49%;
+                height: 420px;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="div1">
+            <p>meu paragrafo</p>
+            <p>meu paragrafo</p>
+            <div class="destaque">Opa</div>
+            <div>Teste</div>
+            <hr class="destaque">
+            <p class="destaque">meu paragrafo</p>
+            <p>meu paragrafo</p>
+            <hr>
+            <p>meu paragrafo</p>
+            <p class="destaque">meu paragrafo</p>
+            <hr>
+            <p>meu paragrafo</p>
+            <p>meu paragrafo</p>
+            
+        </div>
+
+        <div id="div2">
+            <p>Meu casal</p>
+            <div class="destaque">Vitão</div>
+            <hr class="destaque">
+            <p>É nóis</p>
+            <p class="destaque">Sonza</p>
+            <p>Fica de 4 soh mais uma vez</p>
+            <p class="destaque">se tu qiser</p>
+            <div class="destaque">pode fica de 3</div>
+
+        </div>
+        
+    </body>
+</html>

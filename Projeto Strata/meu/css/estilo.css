@@ -3,10 +3,16 @@
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Open Sans', arial, helvetica, sans-serif;
     color: white;
     background-color: rgb(1, 4, 53);
+    background-image: url(../images/bg6.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-position-y: -200px;
+    background-color: rgb(42, 170, 230);
 
 }
 
@@ -81,17 +87,23 @@ footer {
 }
 
 main{
-    overflow: hidden;
-    width: 80%;
-    margin-left: 21%;
-    height: 1030px;
+    width: 60%;
+    margin-left: 29%;
+    margin-top: 69px;
+    height: 621px;
     float: left;
     padding: 0 10px;
-    background-image: url(../images/bg6.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-position-y: -200px;
-    background-color: rgb(42, 170, 230);
+    border: solid white 12px;
+    background-color: rgba(255,255,255,.5);
+    border-radius: 18px;
+    transition: border 1s ease,
+                background-color 1s ease;
+    
+}
+
+main:hover{
+    border: solid rgb(5, 68, 97) 12px;
+    background-color: rgba(0, 0, 0, .3);
 }
 
 #avatar {
@@ -196,11 +208,13 @@ footer ul a{
 
 footer li i{
     color: rgb(11, 161, 230);
-    transition: color .5s ease;
+    transition: color .5s ease,
+                transform 1.2s ease;
 }
 
 footer li:hover i{
     color:rgb(255, 255, 255);
+    transform: rotate(360deg);
 }
 
 .name_in{
