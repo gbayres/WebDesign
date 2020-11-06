@@ -1,107 +1,170 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid rgb(255, 255, 255); */
 }
 
 body {
-    overflow: auto; 
+    overflow: hidden;
     font-family: 'Open Sans', arial, helvetica, sans-serif;
-    background-color: rgb(6, 4, 32);
     color: white;
+    background-color: rgb(1, 4, 53);
+
 }
 
 header {
     float: left;
-    width: 25%;
+    width: 20%;
     height: 100%;
     position: fixed;
-    background-position: right;
+    background-position: bottom center;
     background-size: cover;
-    background-image: url(../images/bg5.jpg);
+    background-image: url(../images/bg3.jpg);
     text-align: right;
     overflow: hidden;
-    border-right: solid 10px rgb(51, 94, 148);
-    transition: border-right-color .5s ease;
+    border-right: solid 15px rgb(19, 28, 80);
+    transition: border-right-color .5s ease,
+                background-color 1s ease;
 }
 
 header:hover {
     border-right-color: rgb(58, 186, 245);
+    background-color: rgb(58, 186, 245);
 }
 
 nav{
+    position: fixed;
+    text-align: center;
     float: left;
-    height: 2em;
-    width: 75%;
-    margin-left: 27%;
+    width: 0.01em;
+    margin-left: 20%;
+    height: 99%;
+    overflow: hidden;
+    background-color: rgba(24, 4, 97, .5);
+    border: rgb(255, 255, 255) solid 5px;
+    transition: width 1s ease;
 
+}
+
+nav:hover {
+    width: 8em;
+}
+
+nav ul{
+    /* width: 500px; */
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+nav li{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15% 5px;
+    border-bottom: solid 1px rgb(58, 186, 245);
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    font-variant: small-caps;
+    transition: background-color .5s ease;
+
+}
+
+nav li:hover{
+    background-color: rgb(58, 186, 245);
 }
 
 footer {
     position: fixed;
     bottom: 0;
-    width: 25%;
+    width: 20%;
     height: 25%;
     text-align: left;
 }
 
 main{
-    width: 75%;
-    margin-left: 27%;
-    height: 80%;
+    overflow: hidden;
+    width: 80%;
+    margin-left: 21%;
+    height: 1030px;
     float: left;
+    padding: 0 10px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: cover;
+    background-color: rgb(42, 170, 230);
 }
 
 #avatar {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
     text-align: center;
 }
 
 #avatar img{
     width: 13em;
     margin-top: 25%;
-    border-radius: 50%;
+    border-radius: 25%;
     transition: width .5s ease, border .5s ease;
-    border:  rgb(51, 94, 148) 10px solid;
-    
+    border:  rgb(58, 186, 245) 10px solid;
+
 }
 
-header:hover #avatar img{
-    width: 16em;
-    border: rgb(58, 186, 245) 10px solid;
-}
 
 h1{
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 15px;
     width: 80%;
     margin-left: 10%;
-    height: 20%;
+    height: 25%;
     overflow: hidden;
     text-align: center;
     font-style: oblique;
-    line-height: 2em;   
+    line-height: 2em;
 }
 
 #main_name{
+    overflow: hidden;
+    white-space: nowrap;
     display: inline-block;
-    color: rgb(255, 255, 255);
-    font-size: 35px;
+    color: rgb(23, 12, 128);
+    text-shadow: 3px 3px 0px rgb(56, 221, 250);
+    font-size: 25px;
     font-variant: small-caps;
-    transition: color 1s ease;
-    
+    transition: color 1s ease,
+                text-shadow 1s ease,
+                width 1s ease;
+    width: 0%;
+    height: 30px
+
 }
 
 header:hover #main_name{
-    color: rgb(58, 186, 245);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 0px rgb(56, 221, 250);
+    width: 100%;
+}
+
+header:hover .fab{
+    color: rgb(58, 186, 245)
 }
 
 #profession {
+    margin-top: 55px;
     display: inline-block;
     height: 0px;
     width: 100%;
     overflow: hidden;
     transition: height 1s ease;
     line-height: 18px;
+}
+
+#passe_o_mouse {
+    height: 35%;
+    display: inline-block;
+    transition: height .5s ease;
+    overflow: hidden;
+}
+
+header:hover #passe_o_mouse {
+    height: 0;
 }
 
 header:hover #profession {
@@ -117,35 +180,40 @@ footer ul{
 footer ul a{
     text-decoration: none;
     color: white;
-    font-size: 40px;
-    
+    font-size: 30px;
+
 }
 
 footer li i{
-    color: white;
+    color: rgb(11, 161, 230);
     transition: color .5s ease;
 }
 
 footer li:hover i{
-    color:rgb(58, 186, 245);
+    color:rgb(255, 255, 255);
 }
 
 .name_in{
     overflow: hidden;
     display: inline-block;
-    font-size: 20px;
-    /* padding-left: 5px; */
+    box-sizing: border-box;
+    padding-top: 5px;
+    font-size: 15px;
     height: 25px;
-    /* padding-bottom: 10px; */
     width: 0;
-    transition: width .5s ease;
+    transition: width 1s ease;
 }
 
 footer ul li:hover .name_in {
-    width: 60%;
+    width: 80%;
 }
 
 footer ul li{
     text-align: center;
     box-sizing: border-box;
+}
+
+#left_items {
+    float: left;
+    border: solid red 5px;
 }

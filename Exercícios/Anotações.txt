@@ -27,3 +27,18 @@ max-width: 100%; => ajusta até o tamanho máximo da imagem
 .anterior + .posterior {} => seleciona todo elemento posterior que em após o anterior
 transition all; => faz a transição de tudo
 cursor: pointer; => coloca a mãozinha
+white-spaces: nowrap; => decide como tratar espaços
+article é o que faz sentido por si só
+section é uma div com relaçao entre os conteúdos
+article p > b {} => pega todo p que é filho direto de b
+article h3 + p {} => pega o p que vem exatamente após um elemento h3
+article h3 ~ p {} => pega todos os p que vem após o h3
+a[title]{} => seleciona todo a que possui o atributo title
+a[href^=http] => seleciona todo atributo que href inicia com http
+a[src$=".png"] => seleciona todo atributo que termina com .png
+:not(a) => seleciona todos elementos que não são link
+p:not(.destaque) => seleciona todos p que não são da classe destaque
+img:not([alt]) {} => seleciona todas as imagens que não possuem atributo alt
+opacity: .2; => define opacidade
+texto:before {content=""} => adiciona elemento visual antes do conteúdo
+texto:after {content=""} => adiciona elemento visual após o conteúdo
