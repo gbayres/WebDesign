@@ -87,9 +87,10 @@ main{
     height: 1030px;
     float: left;
     padding: 0 10px;
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/bg6.jpg);
     background-size: cover;
-    background-position: cover;
+    background-position: bottom;
+    background-position-y: -200px;
     background-color: rgb(42, 170, 230);
 }
 
@@ -101,12 +102,21 @@ main{
 #avatar img{
     width: 13em;
     margin-top: 25%;
-    border-radius: 25%;
-    transition: width .5s ease, border .5s ease;
-    border:  rgb(58, 186, 245) 10px solid;
+    border-radius: 50%;
+    position: relative;
+    bottom: 0px;
+    transition: border 1s ease,
+                bottom .5s ease,
+                border-radius .5s ease;
+    border:  rgb(34, 135, 182) 10px solid;
 
 }
 
+#avatar img:hover{
+    border: rgb(84, 235, 255) 10px solid;
+    bottom: 10px;
+    border-radius: 0 25%;
+}
 
 h1{
     color: rgb(255, 255, 255);
