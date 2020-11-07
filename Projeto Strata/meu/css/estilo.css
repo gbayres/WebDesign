@@ -87,21 +87,25 @@ footer {
 }
 
 main{
+    box-sizing: border-box;
     width: 60%;
     margin-left: 29%;
     margin-top: 69px;
     height: 621px;
     float: left;
-    padding: 0 10px;
+    padding: 40px;
     border: solid white 12px;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.25);
     border-radius: 18px;
     transition: border 1s ease,
-                background-color 1s ease;
+                background-color 1s ease,
+                color 1s ease;
+    color: black;
     
 }
 
 main:hover{
+    color: white;
     border: solid rgb(5, 68, 97) 12px;
     background-color: rgba(0, 0, 0, .3);
 }
@@ -240,4 +244,63 @@ footer ul li{
 #left_items {
     float: left;
     border: solid red 5px;
+}
+
+.chk {
+    margin-right: 2px;
+    width: 40px;
+    height: 20px;
+    background-color: rgba(134, 131, 131, 0.493);
+    display: inline-block;
+    border: solid rgba(64, 66, 66, 0.849) 3px;
+    border-radius: 10px;
+    position: relative;
+    transition: border 0.5s ease,
+                background-color 0.5s ease;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
+}
+
+input:checked + div{
+    border: solid rgb(11, 161, 230) 3px;
+    background-color: white;
+}
+
+.circle_check{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(64, 66, 66, 0.849);
+    border-radius: 20px;
+    position: absolute;
+    left: 3px;
+    top: 2.45px;
+    transition: left .5s ease,
+                transform .2s ease-in-out,
+                background-color .5s ease;
+    
+}
+
+input[type="checkbox"]:checked + div div{
+    transform: translate(20px);
+    background-color: rgb(11, 161, 230);
+    
+}
+
+input[type="checkbox"] {
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.label_check span{
+    position: relative;
+    bottom: 5px;
+}
+
+.label_check {
+    display: block;
+    width: 20%;
+}
+
+input:focus + .chk {
+    border: solid red 3px;
 }
