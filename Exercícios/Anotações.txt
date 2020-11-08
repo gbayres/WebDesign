@@ -69,3 +69,22 @@ transform: rotate(30deg) translate(50px, 50px) => se eu quiser aplicar as duas
 transform: skewY(30deg) skewX(30deg) => deforma o elemento;
 transform: scaleX(2) scaleY(3) => muda a escala do elemento;
 border-top-color: transparent; => deixa a borda de cima transparente
+a:after{
+	content: "(" attr(href) ")";
+	} => evidencia o conteúdo de href
+@media screen and (win-width: 400px){
+	body{
+		background-color: orange;
+	{
+} => muda a cor do background se a tela passar 400px de width
+<meta name="viewport" content="width=device-width">
+.clearfix::after{
+	content: ' ';
+	display: block;
+	clear: both;
+} => faz o papel do overflow: auto;
+"1em" equivale ao font-size do elemento pai;
+"1rem" equivale ao font-size do elemento root (html)
+margin: auto; => centraliza <<<<<<<<
+colocar @charset "UTF-8"; no início do arquivo css é uma boa prática
+text-align formata todos elementos de linha
