@@ -1,0 +1,102 @@
+box-sizing: border-box; => ao invés do padding adicionar ao tamanho final, ele reduz espaço pro conteúdo na div.
+visibility: hidden; => esconde o elemento, mas guarda o espaço.
+float: right; => deixa a div flutuando à direita, mas causa muito efeito colateral
+clear: right; => remove efeito colateral do float: right;
+clear: both; => clear left and right;
+Elementos com float se entendem, mas a div mãe para de reconhecer como filhos => para corrigir, usar overflow: auto (gambiarra)
+	clearfix é mais elegante (???)
+position: relative; => elemento é relativo a ele mesmo
+	Não altera os elementos, ainda segura a posição, mas faz uma projeçao pra outro lugar
+	usado em conjunto com top, right, left, bottom...
+position: absolute; => elemento é relativo ao último elemento pai posicionado (body, absolute, relative, fixed)
+position: fixed; => relativo à tela. Fica fixo na janela do browser.
+<dl>, <dt> e <dd> => lista, termo, definição.
+<sub> e <sup> fazer subescrito ou sobrescrito.
+<code> representa uma linha de código
+<q cite="http://..."> usado para citações pequenas
+<blockquote cite=...> usado para citações maiores
+<pre> considera os espaços, quebras de linha e etc
+A unidade "em" se refere ao tamanho do objeto. Se eu coloco 2em eu tô dizendo que o tamanho é duas vezes o tamanho do objeto.
+a:last-child => aplica ao último herdeiro
+border-collapse: collapse => junta as bordas
+a:nth-child(n) => seleciona o n-ésimo filho se ele for da classe a; n pode ser even, odd, etc
+a:nth-child(3n - 1) => seleciona cada múltiplo de 3 - 1
+outline: none; => tira borda azul padrão do browser
+input[type="text"]{} => altera todo input do tipo texto
+max-width: 100%; => ajusta até o tamanho máximo da imagem
+.anterior + .posterior {} => seleciona todo elemento posterior que em após o anterior
+transition all; => faz a transição de tudo
+cursor: pointer; => coloca a mãozinha
+white-spaces: nowrap; => decide como tratar espaços
+article é o que faz sentido por si só
+section é uma div com relaçao entre os conteúdos
+article p > b {} => pega todo p que é filho direto de b
+article h3 + p {} => pega o p que vem exatamente após um elemento h3
+article h3 ~ p {} => pega todos os p que vem após o h3
+a[title]{} => seleciona todo a que possui o atributo title
+a[href^=http] => seleciona todo atributo que href inicia com http
+a[src$=".png"] => seleciona todo atributo que termina com .png
+:not(a) => seleciona todos elementos que não são link
+p:not(.destaque) => seleciona todos p que não são da classe destaque
+img:not([alt]) {} => seleciona todas as imagens que não possuem atributo alt
+opacity: .2; => define opacidade
+texto:before {content=""} => adiciona elemento visual antes do conteúdo
+texto:after {content=""} => adiciona elemento visual após o conteúdo
+input[type="checkbox"]:checked {} => faz alguma coisa se a checkbox estiver checada
+<button disabled>Qqr coisa</button>
+	button:disabled{} => faz alguma coisa com o botão desabilitado 
+p:empty:before {content=""} => adiciona alguma coisa antes dos parágrafos vazios
+<div tabindex="1"></div> => força a div a receber focus
+<input type="text" value="valor inicial" readonly> => somente leitura
+input::placeholder {} => formata o placeholder
+div p:nth-of-type(4) => pega o quarto elemento do tipo parágrafo
+p::first-letter{
+	float: left;
+	font-size: 3em;
+	line-height: 1;
+	display: inline-block;
+	margin-right: .1em
+	} => formata a primeira letra
+p::first-line{} => formata a primeira linha
+p::selection{} => formata a seleção
+transform: translate(50px, 50px) => a diferença do transform pro position relative é
+	quuando trabalhamos com porcentagens => no position relative temos como referencia
+	a largura do elemento pai e no transform a ref é o próprio elemento.
+translateX e translateY são outras formas de representar
+transform: rotate(45deg); => rotaciona 45 graus
+transform-origin: left top; => muda o eixo de rotação
+transform: rotate(30deg) translate(50px, 50px) => se eu quiser aplicar as duas
+transform: skewY(30deg) skewX(30deg) => deforma o elemento;
+transform: scaleX(2) scaleY(3) => muda a escala do elemento;
+border-top-color: transparent; => deixa a borda de cima transparente
+a:after{
+	content: "(" attr(href) ")";
+	} => evidencia o conteúdo de href
+@media screen and (win-width: 400px){
+	body{
+		background-color: orange;
+	{
+} => muda a cor do background se a tela passar 400px de width
+<meta name="viewport" content="width=device-width">
+.clearfix::after{
+	content: ' ';
+	display: block;
+	clear: both;
+} => faz o papel do overflow: auto;
+"1em" equivale ao font-size do elemento pai;
+"1rem" equivale ao font-size do elemento root (html)
+margin: auto; => centraliza <<<<<<<<
+colocar @charset "UTF-8"; no início do arquivo css é uma boa prática
+text-align formata todos elementos de linha
+<audio>
+	<source src="media/sound.mp3" type="audio/mp3">
+	<source src="media/sound.ogg" type="audio/ogg">
+	<p>Seu browser nao suporta este recurso</p>
+</audio> => toca audio
+<video controls autoplay loop muted controlsList="nodownload"> =>semelhante ao audio
+<iframe src="http..." width="100%" height="100%"></iframe> => insere outra pagina dentro da pagina
+<figure>
+	<img src="..." alt="">
+	<figcaption>legenda qqr</figcaption>
+</figure> => usada para figuras que podem se removidas, que a ordem de aparicao é irrelevante
+	     é como se fosse um article em imagem...
