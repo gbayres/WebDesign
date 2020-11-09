@@ -79,7 +79,13 @@ body{
 .gallery{
     color: #555;
     padding: 0 100px 50px 100px;
-    overflow: auto;
+    /* overflow: auto; */
+}
+
+.clearfix::after{
+    content: ' ';
+    display: block;
+    clear: both;
 }
 
 .gallery-card{

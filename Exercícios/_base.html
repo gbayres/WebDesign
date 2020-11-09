@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        <style>
+            * {
+                border: black 2px solid;
+            }
+
+            .div1 {
+                width: 5em;
+                height: 5em;
+                float: right;
+                background-color: blue;
+            }
+
+            .div2 {
+                width: 5em;
+                height: 5em;
+                float: left;
+                background-color: green;
+            }
+            
+            .div3 {
+                width: 5em;
+                height: 5em;
+                float: right;
+                background-color: red;
+            }
+
+            .div4 {
+                width: 5em;
+                height: 5em;
+                background-color: yellow;
+                float: right;
+            }
+
+            .clearfix::after {
+                content: ' ';
+                display: block;
+                clear: both;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="father clearfix">
+            <div class='div1'></div>
+            <div class='div2'></div>
+            <div class='div3'></div>
+            <div class='div4'></div>
+        </div>
+    </body>
+</html>
