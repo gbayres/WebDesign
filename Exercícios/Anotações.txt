@@ -69,3 +69,15 @@ transform: rotate(30deg) translate(50px, 50px) => se eu quiser aplicar as duas
 transform: skewY(30deg) skewX(30deg) => deforma o elemento;
 transform: scaleX(2) scaleY(3) => muda a escala do elemento;
 border-top-color: transparent; => deixa a borda de cima transparente
+<audio controls autoplay loop>
+	<source src="media/sound.mp3" type="audio/mp3">
+	<source src="media/sound.ogg" type="audio/ogg">
+	<p>Seu browser não suporta este recurso</p>
+</audio> => toca audio
+<video controls autoplay loop muted controlsList="nodownload"> =>semelhante ao audio
+<iframe src="http..." width="100%" height="100%"></iframe> => insere outra página dentro da página
+<figure>
+	<img src="..." alt="">
+	<figcaption>legenda qqr</figcaption>
+</figure> => usada para figuras que podem se removidas, que a ordem de aparição é irrelevante
+	     é como se fosse um article em imagem...
