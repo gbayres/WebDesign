@@ -70,6 +70,7 @@ transform: skewY(30deg) skewX(30deg) => deforma o elemento;
 transform: scaleX(2) scaleY(3) => muda a escala do elemento;
 border-top-color: transparent; => deixa a borda de cima transparente
 a:after{
+	content: "(" attr(href) ")";
 	} => evidencia o conteudo de href
 
 @media screen and (win-width: 400px){
@@ -100,3 +101,35 @@ text-align formata todos elementos de linha
 	<figcaption>legenda qqr</figcaption>
 </figure> => usada para figuras que podem se removidas, que a ordem de aparicao é irrelevante
 	     é como se fosse um article em imagem...
+
+#idqualquer:before {
+	counter-reset: contador;
+	counter-increment: contador;
+	content: counter(contador)
+}
+
+background-clip: content-box => apenas o conteúdo
+background-clip: padding-box => do padding pra dentr
+background-clip: border-box => tudo
+background-color: hsl(30deg, %saturação, %luminosidade)
+background-color: linear-gradient(to bottom right, red, blue);
+background-color: linear-gradient(68deg, red, blue);
+background-image: radial-gradient(circle, red 50%, blue, orange, green);
+background-image: radial-gradient(farthest-side at 20% 90%, red 50%, blue, orange, green);
+background-image: radial-gradient(closest-corner at 20% 90%, red 50%, blue, orange, green);
+repeating-linear-gradient => vai repetindo o gradiente
+background-attachment: fixed; => fixa o gradiente e permite andar no gradiente
+
+display: flex; => define flexbox
+flex-direction: row; => define o sentido de crescimento
+flex-wrap: wrap; => define se há quebra de linha
+flex-flow: row nowrap; => junta os dois anteriores
+justify-content: flex-end; => posição horizontal
+align-items: stretch; => posição vertical
+align-self: flex-end; => alinha o elemento isoladamente
+align-content: flex-end; => alinha grupo de elementos
+flex-grow: 1 => pega 100% do espaço em branco excedente. O número equivale ao peso.
+flex-shrink: 1 => seleciona as prioridades de encolhimento dos elementos
+flex: 0 1 100px; (grow shrink basis)
+order: 3; => define a ordem dos elementos 
+flex-direction: column => inverte eixos
