@@ -133,3 +133,103 @@ flex-shrink: 1 => seleciona as prioridades de encolhimento dos elementos
 flex: 0 1 100px; (grow shrink basis)
 order: 3; => define a ordem dos elementos 
 flex-direction: column => inverte eixos
+
+display: grid;
+grid-template-columns: 100px 100px 100px;
+grid-template-columns: 100px 100px 1fr; => 1fr = 1 fração de todo elemento que excede
+grid-template-rows: 100px 100px;
+grid-template-rows: repeat(2, 100px);
+grid-row-gap: 20px;
+grid-column-gap: 30px;
+
+Posicionamento de celulas =
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-row: 1 / 2;
+
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-column: 3 / 4;
+	grid-column: 2 / span 2; => começa na 2 e ocupa 2 células
+
+	grid-column-end: -1; => -1 é a última linha
+	celulas podem se sobrepor
+
+	z-index: 1; define posição em camadas
+
+.Container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 100px 50px 1fr 50px;
+	grid-template-areas:
+		"header header header"
+		"nav 	nav	   aside" => "." para espaços em branco
+		"main   main   aside"
+		"footer footer aside"
+}
+
+.header{
+	grid-area: header;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+.aside{
+	grid-area: aside;
+}
+
+.main{
+	grid-area: main;
+}
+
+========
+.Container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-rows:    [header-start] 100px 
+						   [header-end nav-start] 50px 
+						   [nav-end main-start] 1fr 
+						   [main-end footer-start] 50px
+						   [footer-end];
+	grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end];
+
+
+.header{
+	grid-column: col1-start / col3-end;
+	grid-row: header-start / header-end; => pode ser simplificado escrevendo só "header"
+
+}
+
+========
+
+.Container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-rows:    [header-start] 100px 
+						   [header-end nav-start] 50px 
+						   [nav-end main-start] 1fr 
+						   [main-end footer-start] 50px
+						   [footer-end];
+	grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+
+
+.header{
+	grid-column: col-start 1 / col-end 3;
+	grid-row: header;
+	
+}
+
+
+========
+
+.Container {
+	grid-template-columns: repeat(auto-fill,   =>  completa com colunas invisíveis
+						   minmax(100px, 1fr));
+	grid-template-columns: repeat(auto-fill,   =>  semelhante ao float left
+						   minmax(100px, 1fr));
+	grid-auto-rows: 100px; => dá um tamanho automático de 100 px pras linhas
+	grid-auto-rows: 100px 50px; => vai alternando;
+}
