@@ -233,3 +233,17 @@ Posicionamento de celulas =
 	grid-auto-rows: 100px; => dá um tamanho automático de 100 px pras linhas
 	grid-auto-rows: 100px 50px; => vai alternando;
 }
+
+<kbd>CTRL</kbd>
+<abbr title="Universidade Federal de Juiz de Fora">UFJF</abbr>
+<time datetime="2019-09-15T20:00:00-03:00">15/09/2019 - 20h</time>
+<p>HTML é <del>complicado</del> <ins>fácil</ins></p>
+<span lang="en-us">JS Conference</span>
+
+color: black !important; => sobrescreve demais regras
+
+div#jubotron>h2{subtitulo}+p{paragrafos}*2 => estudar essa parada! Emmet abbreviation
+ul.MainNav => acho que pega todos ul da classe mainnav
+.jumbotron__text
+height: 100vh; => 100% da viewport height
+width: 50wh; => 50% da viewport width
