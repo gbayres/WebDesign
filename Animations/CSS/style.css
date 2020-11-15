@@ -1,0 +1,178 @@
+@charset "UTF-8";
+*{
+    /* border: black .001em solid; */
+    margin: 0;
+}
+
+html {
+    /* height: 100vh;
+    width: 100%; */
+    border: .001em solid black;
+    margin: 0;
+    background-image: linear-gradient(
+        hsl(210deg, 100%, 50%),
+        black);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+
+
+header {
+    /* width: 100%;
+    overflow: hidden; */
+    background-image: url("../Images/banner.jpg");
+    background-position-y: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    height: 30rem;
+    text-align: center;
+}
+
+#titulo{
+    margin-top: 12rem;
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6rem;
+    text-decoration: underline dotted;
+    animation: mudardecor 1s linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* color: rgb(116, 253, 246); */
+}
+
+nav{
+    height: 40rem;
+    background-color: white;
+    opacity: 0.8;
+    color: hsl(210deg, 100%, 15%);
+}
+
+nav ul{
+    
+    height: 40rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    font-size: 5rem;
+    display: block;
+    height: 10rem;
+    box-sizing: border-box;
+    padding-top: 0.4em;
+    transition: background-color 0.5s ease-in-out;
+}
+
+nav ul li:hover{
+    background-color: rgba(0, 39, 77, 0.24);
+}
+
+.main-form{
+    text-align: center;
+}
+
+#busca {
+    width: 60%;
+    margin: auto;
+    border-radius: 2em;
+}
+
+#busca legend{
+    text-align: center;
+}
+
+.main_form label{
+    display: block;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.main_form input[type="text"] {
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+    border-radius: 1em;
+}
+
+.main_form input[type="submit"] {
+    display: block;
+    margin: .5em auto;
+    padding: .5em 2em;
+    border-radius: 1em;
+}
+
+@keyframes passar{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    25%{
+        opacity: 100%;
+    }
+
+    50%{
+    
+    }
+
+    75%{
+        color: white;
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
+        transform: translateX(100%);
+    }
+
+}
+
+@keyframes quicar{
+    0%{
+        transform: translateY(-1.6em);
+    }
+
+    20%{
+        transform: translateY(+1.6em);
+    }
+
+    40%{
+        transform: translateY(-0.8em);
+    }
+    
+    60%{
+        transform: translateY(+0.8em);
+    }
+    
+    80%{
+        transform: translateY(-0.2em);
+    }
+
+    100%{
+        transform: translateY(0em);
+    }
+}
+
+@keyframes girar{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mudardecor{
+    0%{
+        color: white;
+    }
+
+    100%{
+        color: hsl(210deg, 100%, 75%);
+    }
+}
