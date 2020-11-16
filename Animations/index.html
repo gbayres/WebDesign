@@ -26,9 +26,18 @@
                 <form class="main_form" action="http://google.com/search" method=_blank>
                     <label for="nome">Escreva o que você quer pesquisar</label>
                     <input type="text" name="q" id="nome">
-                    <input type="submit" value="logar">
+                    <textarea maxlength="100" placeholder="Insira o texto" id="texto"></textarea>
+                    <p>Faltam <span id="n_caracteres"></span> caracteres</p>
+                    
+                    <label for="termo">
+                        <input type="checkbox" id="termo">Concordo com os termos de serviço
+                    </label>
+                    
+                    
+                    <input type="submit" disabled value="logar" id="botao_logar">
                 </form>
             </fieldset>
+
         </main>
         <footer></footer>
         <script src="JS/script.js"></script>

@@ -283,3 +283,6 @@ animation-play-state: paused;
 
 object-fit: cover;
 will-change: transform; => se animação ficar pulando
+resize: none; => prevents textarea to resize
+<textarea maxlength="100" id="texto">Insira o texto</textarea>
+<textarea cols="50" rows="10" readonly>
