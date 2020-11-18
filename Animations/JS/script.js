@@ -28,20 +28,29 @@ function f_mudar(){
 }
 
 function f_contar(e){
+    var $botao_logar = document.getElementById("botao_logar");
+    var $termo = document.getElementById("termo");
     var max = e.target.maxLength;
     var inside_text = e.target.value;
     var $n_caracteres = document.getElementById("n_caracteres");
     $n_caracteres.textContent = max - inside_text.length;
+
+    if (!inside_text.length || !$termo.checked){
+        $botao_logar.disabled = true;
+    }
+
+    else {
+        $botao_logar.disabled = false;
+    }
 
 }
 
 function f_termo(e){
     var $termo = document.getElementById("termo");
     var $botao_logar = document.getElementById("botao_logar");
-    
-    console.log($termo.checked);
-    
-    if ($termo.checked){
+    var $texto = document.getElementById("texto");
+
+    if ($termo.checked && $texto.value.length){
         $botao_logar.disabled = false;
     }
 
@@ -49,6 +58,12 @@ function f_termo(e){
         $botao_logar.disabled = true;
     }
 
+}
+
+function f_adicionar(e){
+    var $label0 = document.getElementsByTagName("label")[0];
+    $label0.classList.toggle("red");
+    console.log($label0);
 }
 
 passar.addEventListener("click", f_passar);
@@ -62,5 +77,7 @@ $n_caracteres.textContent = $texto.getAttribute("maxlength");
 $texto.addEventListener("input", f_contar);
 
 var $termo = document.getElementById("termo")
-
 $termo.addEventListener("click", f_termo);
+
+var $adicionar = document.getElementById("adicionar");
+$adicionar.addEventListener("click", f_adicionar)

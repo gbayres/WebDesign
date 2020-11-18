@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" class="new_html">
     <head>
         <title>Animações</title>
         <meta name="author" content="Gabriel">
         <meta name="description" content="Aprendendo animções">
         <meta name="keywords" content="Animações, CSS">
         <link href="CSS/style.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     </head>
         
     <body>
@@ -13,7 +14,7 @@
             <h1 id="titulo">Animações</h1>
         </header>
         <nav>
-            <ul>
+            <ul id="nav_ul">
                 <li id="passar">Passar</li>
                 <li id="quicar">Quicar</li>
                 <li id="girar">Girar</li>
@@ -24,9 +25,8 @@
             <fieldset id="busca">
                 <legend>Campo de busca</legend>
                 <form class="main_form" action="http://google.com/search" method=_blank>
-                    <label for="nome">Escreva o que você quer pesquisar</label>
-                    <input type="text" name="q" id="nome">
-                    <textarea maxlength="100" placeholder="Insira o texto" id="texto"></textarea>
+                    <label class="red" for="nome">Escreva o que você quer pesquisar</label>
+                    <textarea maxlength="100" name="q" placeholder="Insira o texto" id="texto"></textarea>
                     <p>Faltam <span id="n_caracteres"></span> caracteres</p>
                     
                     <label for="termo">
@@ -36,6 +36,7 @@
                     
                     <input type="submit" disabled value="logar" id="botao_logar">
                 </form>
+                <button id="adicionar">Adicionar</button>
             </fieldset>
 
         </main>
