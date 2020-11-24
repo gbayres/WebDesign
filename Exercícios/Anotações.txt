@@ -286,3 +286,28 @@ will-change: transform; => se animação ficar pulando
 resize: none; => prevents textarea to resize
 <textarea maxlength="100" id="texto">Insira o texto</textarea>
 <textarea cols="50" rows="10" readonly>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+deixar elemeno clicável com height de 48px;
+
+img {
+	max-width: 100%;
+}
+
+.hero{
+	height: 80vh;
+	pading: 40px 20px;
+	text-align: center;
+	background-image: url(image);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+
+}
+
+outline: 2px solid blue; => diferente do border, fica acima do item
+outline-offset: -5px; => anda o outline;
+word-spacing: 2px; => define espaço entre as palavras
+white-space: nowrap; => previne que inline-blocks pulem pra próxima linha

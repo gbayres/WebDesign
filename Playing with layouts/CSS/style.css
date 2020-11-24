@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+<script>
+alert('ola');
+</script>
+
 * {
     border: solid black 1px;
 }
